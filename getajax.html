@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("https://reqres.in/api/users/2", function(data, status){
+      console.log(data.data.first_name)
+      document.getElementById("user").innerText = data.data.first_name + ' ' + data.data.last_name
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div>
+  <h1>User Details</h1>
+  <p id="user"></p>
+</div>
+<button>Send an HTTP GET request to a page and get the result back</button>
+
+</body>
+</html>

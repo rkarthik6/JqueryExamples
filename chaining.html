@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").css("color", "red")
+      .slideUp(2000)
+      .slideDown(2000);
+  });
+  $("li[data-country='India']").css("color", "green");
+  // $( ".selector" ).toolbar( "show" );
+});
+</script>
+</head>
+<body>
+<div class="selector"></div>
+<button>Click me</button>
+<ul>
+  <li data-country="India">Mumbai</li>
+  <li data-country="China">Beijing</li>
+  <li data-country="United States">New York</li>
+</ul>
+</body>
+</html>

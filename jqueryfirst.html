@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+//   $("button").click(function(){
+//     $("h2").hide();
+//   });
+  $("#hide").mouseleave(function(){
+    $("h2").hide();
+  });
+  $("#show").click(function(){
+    $("h2").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>Testing</h2>
+
+<button id="hide">Click me</button>
+<button id="show">show me</button>
+
+</body>
+</html>
